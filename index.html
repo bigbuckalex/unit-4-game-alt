@@ -6,9 +6,8 @@
     <title>Shapes Collector!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"> 
 </head>
 <body>
     <div class="container">
@@ -18,7 +17,12 @@
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <p id="instructions" class="shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente consectetur, illo ipsum velit nisi totam dignissimos quo ullam. Deserunt soluta vel obcaecati consectetur excepturi quasi iure tempora recusandae minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatem sit suscipit in odio, molestias tempore deserunt culpa quia quae repellendus nemo, officiis laborum ullam accusamus hic nam excepturi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, numquam id perspiciatis aliquam magnam molestiae, quisquam velit voluptas doloribus totam quod ipsam accusamus! Fuga, facere eum! Similique nemo ipsum impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur architecto vitae aut a. Natus, molestias quaerat voluptate ab, assumenda autem placeat, voluptates quibusdam commodi omnis qui architecto labore laborum.</p>
+                    <p id="instructions" class="shadow">You will be given a random number at the start of the game.<br/><br/>
+                        There are four shapes below. By clicking on a shape you will add a specific amount of points to your total score.<br/><br/>
+                        You win the game by matching your total score to the random number; you lose if your total score goes above the random number.<br/><br/>
+                        The value of each shape is hidden from you until you click on it.<br/><br/>
+                        Each time the game starts, the value of each shape will change.
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -31,22 +35,22 @@
             </div>
             <div class="row">
                 <div class="col" align="center">
-                    <img class="shadow-lg" src="assets/images/circle.png" alt="circle">
+                    <img class="shadow-lg" src="assets/images/circle.png" id="cir" alt="circle">
                 </div>
                 <div class="col" align="center">
-                    <img class="shadow-lg" src="assets/images/triangle.png" alt="triangle">
+                    <img class="shadow-lg" src="assets/images/triangle.png" id="tri" alt="triangle">
                 </div>
                 <div class="col" align="center">
-                    <img class="shadow-lg" src="assets/images/square.png" alt="square">
+                    <img class="shadow-lg" src="assets/images/square.png" id="sqr" alt="square">
                 </div>
                 <div class="col" align="center">
-                    <img class="shadow-lg" src="assets/images/hex.png" alt="hexagon">
+                    <img class="shadow-lg" src="assets/images/hex.png" id="hex" alt="hexagon">
                 </div>
             </div>
             <div class="wrap">
                 <div class="row">
                     <div class="col">
-                        <h2 id="total-heading" class="shadow">Total Score</h2>
+                        <h2 id="total-heading" class="shadow">Total Score:</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -62,5 +66,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

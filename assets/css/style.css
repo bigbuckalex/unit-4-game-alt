@@ -1,4 +1,9 @@
-
+img{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
 
 .container{
     background-image: url("../images/background.png");
