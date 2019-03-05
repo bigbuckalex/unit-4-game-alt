@@ -49,7 +49,6 @@ $(document).ready(function(){
     })
 
     $("#cir").click(function(){
-        $(this).css("border-color","red");
         totalScore += cirNum;
         update();
     })
