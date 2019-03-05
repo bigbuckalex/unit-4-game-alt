@@ -1,3 +1,9 @@
+
+
+.container{
+    background-image: url("../images/background.png");
+}
+
 .wrap{
     width: 50%;
     margin: auto;
@@ -7,30 +13,31 @@
     margin-top: 60px;
     padding: 20px;
     text-align: center;
-}
+    background-color: rgba(255, 255, 255, 0.9);}
 
 #instructions{
     margin-top: 10px;
     padding: 30px;
-}
+    background-color: rgba(255, 255, 255, 0.9);}
 
 #target-number{
     margin-top: 10px;
     padding: 20px;
     text-align: center;
-}
+    background-color: rgba(255, 255, 255, 0.9);}
 
 #wins-losses{
     margin-top: 10px;
     margin-bottom: 20px;
     padding: 20px;
     text-align: center;
-}
+    background-color: rgba(255, 255, 255, 0.9);}
 
 #total-heading{
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 20px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #total-num{
@@ -38,4 +45,4 @@
     margin-bottom: 60px;
     padding: 20px;
     text-align: center;
-}
+    background-color: rgba(255, 255, 255, 0.9);}
